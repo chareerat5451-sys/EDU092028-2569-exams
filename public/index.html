@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>ข้อสอบปลายภาค พล 092028</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FAF7F1;--surface:#fff;--surface-2:#F1ECE1;--ink:#17231F;--ink-soft:#4B5C55;--muted:#6B7A73;--primary:#14534C;--primary-ink:#fff;--primary-soft:#E4EFEC;--accent:#C1782E;--accent-ink:#fff;--danger:#A6402F;--danger-soft:#F7E7E2;--ok:#2F7A4F;--ok-soft:#E3F1E8;--border:rgba(23,35,31,.14);--shadow:0 1px 2px rgba(23,35,31,.06),0 8px 24px rgba(23,35,31,.06);--radius:14px;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1613;--surface:#17211D;--surface-2:#1E2A25;--ink:#EAF2EE;--ink-soft:#C2D0CA;--muted:#93A69E;--primary:#4FA495;--primary-ink:#08211C;--primary-soft:#1B322C;--accent:#E0A05C;--accent-ink:#2B1804;--danger:#E2897A;--danger-soft:#3A211D;--ok:#7FC79A;--ok-soft:#1B3325;--border:rgba(234,242,238,.14);--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35)}}
+:root[data-theme="dark"]{--bg:#0F1613;--surface:#17211D;--surface-2:#1E2A25;--ink:#EAF2EE;--ink-soft:#C2D0CA;--muted:#93A69E;--primary:#4FA495;--primary-ink:#08211C;--primary-soft:#1B322C;--accent:#E0A05C;--accent-ink:#2B1804;--danger:#E2897A;--danger-soft:#3A211D;--ok:#7FC79A;--ok-soft:#1B3325;--border:rgba(234,242,238,.14);--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+html,body{background:var(--bg);color:var(--ink);font-family:'Sarabun','TH SarabunPSK','Noto Sans Thai',sans-serif;margin:0;-webkit-text-size-adjust:100%}
+body{min-height:100%;line-height:1.65;font-size:16px}
+h1,h2,h3{font-weight:700;margin:0 0 6px;color:var(--ink);line-height:1.35}
+h1{font-size:24px}h2{font-size:19px}h3{font-size:17px}
+p{margin:0 0 10px;color:var(--ink-soft)}
+.top-strip{height:6px;background:linear-gradient(90deg,var(--primary),var(--accent))}
+.wrap{max-width:820px;margin:0 auto;padding:24px 18px 60px}
+.wrap.wide{max-width:1240px}
+.brand{font-size:13px;color:var(--muted);margin-bottom:18px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px;margin-bottom:16px}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 2px}
+.pill{background:var(--primary-soft);color:var(--primary);border-radius:999px;padding:5px 14px;font-size:13.5px;font-weight:600}
+.pill.warn{background:var(--danger-soft);color:var(--danger)}
+.pill.ok{background:var(--ok-soft);color:var(--ok)}
+.field{margin-bottom:14px}
+.field label,.lbl{display:block;font-size:14px;font-weight:600;color:var(--ink);margin-bottom:5px}
+.field input,.field select,.field textarea,.input{width:100%;padding:11px 13px;font-size:16px;border:1px solid var(--border);border-radius:10px;background:var(--bg);color:var(--ink);font-family:inherit}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:520px){.field-row{grid-template-columns:1fr}}
+input:focus,textarea:focus,select:focus,button:focus-visible,summary:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:none;border-radius:10px;padding:12px 22px;font-size:16px;font-weight:700;cursor:pointer;font-family:inherit;transition:transform .08s ease,opacity .15s ease}
+.btn:active{transform:scale(.98)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.btn-primary{background:var(--primary);color:var(--primary-ink)}
+.btn-accent{background:var(--accent);color:var(--accent-ink)}
+.btn-danger{background:var(--danger);color:#fff}
+.btn-ghost{background:transparent;color:var(--primary);border:1px solid var(--border)}
+.btn-block{width:100%}
+.btn-sm{padding:7px 14px;font-size:14px}
+.notice{border-radius:10px;padding:12px 15px;font-size:14.5px;margin-bottom:14px}
+.notice-warn{background:var(--danger-soft);color:var(--danger)}
+.notice-info{background:var(--primary-soft);color:var(--primary)}
+.notice-ok{background:var(--ok-soft);color:var(--ok)}
+ul.rules,ol.rules{margin:8px 0 0;padding-left:22px;color:var(--ink-soft);font-size:15px}
+ul.rules li,ol.rules li{margin-bottom:7px}
+.checkrow{display:flex;gap:10px;align-items:flex-start;margin:14px 0;font-size:15px;color:var(--ink)}
+.checkrow input{margin-top:5px;accent-color:var(--primary);width:18px;height:18px;flex-shrink:0}
+.center{text-align:center;padding:26px 8px}
+.spinner{width:40px;height:40px;border-radius:50%;border:4px solid var(--border);border-top-color:var(--primary);margin:0 auto 16px;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.big-icon{font-size:44px;margin-bottom:8px}
+.modal-overlay{position:fixed;inset:0;background:rgba(15,22,19,.55);display:flex;align-items:center;justify-content:center;padding:20px;z-index:100}
+.modal-box{background:var(--surface);border-radius:var(--radius);padding:22px;max-width:460px;width:100%;box-shadow:var(--shadow);border:1px solid var(--border);max-height:90vh;overflow:auto}
+.modal-actions{display:flex;gap:10px;margin-top:16px}
+.modal-actions .btn{flex:1}
+.footnote{font-size:12.5px;color:var(--muted);margin-top:8px}
+.admin-link{text-align:center;margin-top:10px}
+.admin-link a{color:var(--muted);font-size:13px;text-decoration:underline;cursor:pointer}
+.cite-list{margin:6px 0 0;padding-left:20px;font-size:13.5px;color:var(--ink-soft)}
+.cite-list li{margin-bottom:4px;font-family:ui-monospace,monospace}
+.muted{color:var(--muted)}
+.hide{display:none!important}
+
+.sticky-bar{position:sticky;top:0;z-index:30;background:var(--bg);border-bottom:1px solid var(--border);padding-top:env(safe-area-inset-top,0px)}
+.bar-inner{max-width:820px;margin:0 auto;padding:8px 18px;display:grid;grid-template-columns:1.2fr 1fr 1.2fr;gap:10px}
+.bar-item{display:flex;flex-direction:column;min-width:0}
+.bar-label{font-size:12px;color:var(--muted)}
+.bar-value{font-size:19px;font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-value.small{font-size:14px;font-weight:600;padding-top:3px}
+.bar-value.low{color:var(--danger)}
+.bar-value.warn{color:var(--accent)}
+details.case{border:1px solid var(--border);border-radius:12px;padding:0 16px;background:var(--surface)}
+details.case>summary{cursor:pointer;font-weight:700;padding:12px 0;color:var(--primary)}
+.case-body{padding-bottom:14px}
+.case-body p{color:var(--ink)}
+.case-body ul,.case-body ol{margin:6px 0 10px;padding-left:22px;color:var(--ink)}
+.case-body li{margin-bottom:6px}
+textarea#answer{width:100%;min-height:62vh;min-height:62dvh;padding:14px 15px;font-size:17px;line-height:1.75;border:1px solid var(--border);border-radius:12px;background:var(--bg);color:var(--ink);font-family:inherit;resize:vertical}
+.counter{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:13.5px;color:var(--muted);margin:8px 0 14px}
+.counter b{color:var(--ink)}
+/* ---- admin (สำหรับอาจารย์) ---- */
+.topbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:14px}
+.topbar .actions{display:flex;gap:8px;flex-wrap:wrap}
+.toolbar{display:grid;grid-template-columns:1fr 240px;gap:10px;margin:12px 0}
+@media (max-width:640px){.toolbar{grid-template-columns:1fr}}
+.tscroll{overflow-x:auto}
+table.t{width:100%;border-collapse:collapse;font-size:14px}
+table.t th,table.t td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--border);white-space:nowrap;vertical-align:middle}
+table.t th{color:var(--muted);font-weight:600;font-size:13px;cursor:pointer;user-select:none}
+table.t tr.row:hover{background:var(--surface-2)}
+.tag{display:inline-block;border-radius:999px;padding:2px 10px;font-size:12.5px;font-weight:600}
+.tag.prog{background:var(--primary-soft);color:var(--primary)}
+.tag.done{background:var(--ok-soft);color:var(--ok)}
+.tag.auto{background:var(--danger-soft);color:var(--danger)}
+.tag.warn{background:#fdf0d8;color:#8a5a12}
+@media (prefers-color-scheme:dark){.tag.warn{background:#3b2f14;color:#e6b866}}
+.split{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:16px;align-items:start}
+@media (max-width:980px){.split{grid-template-columns:1fr}}
+.sticky-col{position:sticky;top:12px}
+@media (max-width:980px){.sticky-col{position:static}}
+.essay{white-space:pre-wrap;word-break:break-word;font-size:17px;line-height:1.85;color:var(--ink);background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:16px}
+table.kv{width:100%;border-collapse:collapse;font-size:14.5px}
+table.kv td{padding:6px 4px;border-bottom:1px solid var(--border);vertical-align:top}
+table.kv td:first-child{color:var(--muted);width:38%}
+.crit{border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:12px;background:var(--surface)}
+.crit-head{display:flex;justify-content:space-between;gap:8px;margin-bottom:8px}
+.levels{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:8px}
+.lvl{border:1px solid var(--border);background:var(--bg);color:var(--ink-soft);border-radius:9px;padding:7px 4px;font-family:inherit;font-size:13px;cursor:pointer;line-height:1.3}
+.lvl small{display:block;color:var(--muted);font-size:12px}
+.lvl.on{background:var(--primary);color:var(--primary-ink);border-color:var(--primary)}
+.lvl.on small{color:var(--primary-ink);opacity:.85}
+.pointrow{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.pointrow input{width:74px;text-align:center;padding:8px;font-size:17px;font-weight:700;border:1px solid var(--border);border-radius:9px;background:var(--bg);color:var(--ink);font-family:inherit}
+.step{width:36px;height:36px;border-radius:9px;border:1px solid var(--border);background:var(--bg);color:var(--ink);font-size:18px;cursor:pointer;font-family:inherit}
+.lvl-desc{font-size:13.5px;color:var(--ink-soft);margin:6px 0}
+details.kp summary{cursor:pointer;color:var(--primary);font-size:13.5px;font-weight:600}
+details.kp ul{margin:6px 0 2px;padding-left:20px;font-size:13.5px;color:var(--ink-soft)}
+.totalbar{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 14px;background:var(--primary-soft);border-radius:12px;margin:10px 0}
+.totalbar b{font-size:24px;color:var(--primary)}
+.navrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+textarea.cmt{width:100%;min-height:90px;padding:10px 12px;font-size:15px;border:1px solid var(--border);border-radius:10px;background:var(--bg);color:var(--ink);font-family:inherit}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 20px;border-radius:999px;font-size:15px;z-index:200}
+.cite-list{margin:6px 0 0;padding-left:20px;font-size:13.5px;color:var(--ink-soft)}
+.cite-list li{margin-bottom:4px;font-family:ui-monospace,monospace}
+.ai-reason{font-size:13px;color:var(--ink-soft);margin:4px 0 2px;padding:6px 8px;background:var(--surface-2);border-radius:8px;display:none}
+.ai-reason.show{display:block}
+</style>
+</head>
+<body>
+<div class="top-strip"></div>
+<div id="root"></div>
+
+<script>
+const EXAM = {"university": "มหาวิทยาลัยการกีฬาแห่งชาติ วิทยาเขตสุพรรณบุรี", "faculty": "คณะศึกษาศาสตร์ · สาขาวิชาพลศึกษา", "courseCode": "พล 092028", "courseTh": "การพัฒนากิจกรรมการเรียนรู้ทางพลศึกษาและกีฬา", "courseEn": "Development of Learning Activities in Physical Education and Sports", "title": "ข้อสอบปลายภาค ปีการศึกษา 2569", "instructor": "ว่าที่ร้อยตรีหญิงชารีรัตน์ อุดมวิโรจน์สิน", "format": "ข้อเขียนแบบอัตนัย 1 ข้อ คะแนนเต็ม 40 คะแนน", "hours": 24, "maxLeaves": 4, "instructions": ["ข้อสอบนี้เป็นข้อสอบข้อเขียนแบบอัตนัย 1 ข้อ คะแนนเต็ม 40 คะแนน ทำผ่านระบบสอบออนไลน์เท่านั้น", "เวลาทำข้อสอบ 24 ชั่วโมง นับจากกดปุ่มเริ่มทำข้อสอบ (นับตามเวลาของเซิร์ฟเวอร์) เมื่อหมดเวลา ระบบจะส่งคำตอบที่พิมพ์ไว้ให้อัตโนมัติ", "ทำข้อสอบได้เพียงครั้งเดียวต่อรหัสนักศึกษา เมื่อส่งแล้วแก้ไขไม่ได้", "ห้ามออกจากหน้าจอข้อสอบ (สลับแท็บ ย่อหน้าต่าง หรือสลับแอป) นานเกิน 5 นาที ระบบจะแจ้งเตือนและบันทึกประวัติทุกครั้งที่เกิดขึ้น หากสะสมเกิน 3 ครั้ง ระบบจะส่งคำตอบที่พิมพ์ไว้ให้อัตโนมัติและปิดการสอบทันที แม้จะยังเหลือเวลา ดังนั้นควรจัดเวลาทำต่อเนื่องในที่ที่สงบ", "เนื่องจากห้ามออกจากหน้าจอ จึงไม่สามารถเปิดเอกสารหรือแหล่งข้อมูลอื่นระหว่างทำข้อสอบได้", "ห้ามใช้เครื่องมือปัญญาประดิษฐ์ (AI) เช่น ChatGPT, Gemini, Claude ช่วยคิด เขียน แปล หรือปรับแก้คำตอบ ผู้สอนสงวนสิทธิ์พิจารณาผลการสอบตามที่เห็นสมควรหากพบพฤติกรรมไม่เหมาะสม", "ระบบบันทึกประวัติการออกจากหน้าจอและการวางข้อความ (paste) เพื่อให้ผู้สอนใช้ประกอบการตรวจ", "ระบบบันทึกฉบับร่างอัตโนมัติ หากอินเทอร์เน็ตหลุดหรือเบราว์เซอร์ปิด ให้เข้าระบบใหม่ด้วยชื่อและรหัสนักศึกษาเดิมเพื่อทำต่อ (เวลายังนับต่อเนื่อง)", "ระบบไม่แสดงคะแนนให้ผู้สอบทราบ ผู้สอนจะแจ้งผลภายหลัง"], "caseIntro": "โรงเรียนประถมศึกษาขนาดกลางแห่งหนึ่งมีนักเรียนชั้น ป.4 (อายุ 9–10 ปี) ห้องละ 32 คน คาบพลศึกษาคาบละ 50 นาที สนามหญ้าเปียกแฉะบ่อยในฤดูฝน ครูจึงต้องย้ายไปสอนในศาลาอเนกประสงค์ซึ่งมีพื้นที่จำกัด โรงเรียนมีลูกบอลโฟมนุ่ม 10 ลูก กรวย 20 อัน ห่วง 8 อัน และไม่มีงบประมาณจัดซื้อเพิ่ม ครูผู้สอนมีแท็บเล็ตของโรงเรียน 2 เครื่องสำหรับถ่ายวิดีโอ และเครื่องนับก้าว 6 เครื่อง นักเรียนไม่ได้นำสมาร์ตโฟนมาโรงเรียน", "caseDataIntro": "ข้อมูลที่ครูรวบรวมได้จากการสังเกตและประเมินในช่วง 3 สัปดาห์แรก (ข้อมูลสมมติ):", "caseData": ["การสังเกต ALT-PE ในนักเรียนที่สุ่มเลือก 4 คน บันทึกทุก 10 วินาที รวม 3 คาบ พบว่านักเรียนอยู่ในหมวด Motor Appropriate ประมาณร้อยละ 30 รอคิว (Waiting) ประมาณร้อยละ 35 ฟังคำอธิบาย (Instruction) ประมาณร้อยละ 25 และหมวดอื่น ๆ ประมาณร้อยละ 10 ของเวลาในคาบ", "ครูประเมินทักษะการโยนและการรับด้วย TGMD-3 พบว่านักเรียนประมาณร้อยละ 60 ปฏิบัติองค์ประกอบของทักษะได้ไม่ครบ ส่วนใหญ่ยังอยู่ในระยะ Elementary Stage", "ในห้องเดียวกัน นักเรียนอยู่คนละขั้นของการเรียนรู้ทักษะ: ประมาณหนึ่งในสามต้องให้ครูอธิบายซ้ำและทำผิดบ่อย ขณะที่ประมาณหนึ่งในสี่ทำได้คล่องและเริ่มเบื่อกิจกรรมเดิม", "ครูแบ่งทีมโดยให้หัวหน้าห้อง 2 คนผลัดกันเลือกสมาชิก นักเรียนที่ทักษะต่ำกว่าเพื่อนมักถูกเลือกเป็นคนท้าย ๆ และเริ่มหลีกเลี่ยงเกมแข่งขัน เช่น อ้างว่าปวดท้องหรือยืนอยู่ท้ายแถว โดยบอกว่ากลัวทำให้ทีมแพ้และอายเพื่อน", "ครูต้องการพัฒนาชุดกิจกรรมการเรียนรู้ 6 สัปดาห์ (สัปดาห์ละ 1 คาบ) เพื่อพัฒนาทักษะการโยนและการรับ และเพิ่มการมีส่วนร่วมของนักเรียนทุกคน"], "taskIntro": "ท่านเป็นครูพลศึกษาผู้รับผิดชอบ จงเขียนบทวิเคราะห์เชิงวิชาการเสนอแนวทางพัฒนากิจกรรมการเรียนรู้สำหรับสถานการณ์นี้ โดยต้องครอบคลุมประเด็นต่อไปนี้", "tasks": ["วิเคราะห์สาเหตุของปัญหาจากข้อมูลที่กำหนด (อย่างน้อยด้านพัฒนาการของผู้เรียน ด้านแรงจูงใจและความมั่นใจ และด้านการจัดการเรียนการสอน)", "เลือกรูปแบบการสอน (ใช้ 1 รูปแบบหรือผสมผสาน) พร้อมเหตุผลเชิงเปรียบเทียบกับรูปแบบอื่นอย่างน้อย 1 รูปแบบ", "ประยุกต์หลักการฝึกทักษะ (เช่น ขั้นการเรียนรู้ ลักษณะการฝึก การให้ Feedback) และความเหมาะสมตามช่วงวัยประถมศึกษา พร้อมตัวอย่างกิจกรรมอย่างน้อย 2 กิจกรรมที่ทำได้จริงภายใต้ข้อจำกัดของโรงเรียน", "เสนอการใช้เทคโนโลยีหรือ Gamification อย่างมีจุดมุ่งหมาย และระบุด้วยว่าอุปกรณ์ใดที่โรงเรียนมีอยู่แต่ท่านเลือกไม่ใช้ในแผนนี้ เพราะเหตุใด", "วางแผนทดลองใช้และตรวจสอบคุณภาพของชุดกิจกรรม พร้อมวิพากษ์ข้อจำกัดของแนวทางที่เสนอ", "อ้างอิงแนวคิดจากรายวิชาอย่างน้อย 4 บท โดยใช้รูปแบบการอ้างอิงในเนื้อหาแบบ APA 7 (ผู้แต่ง, ปีที่พิมพ์)"], "answerRequirements": "เขียนเป็นบทวิเคราะห์ต่อเนื่อง ความยาวประมาณ 1,500–2,000 คำ (ระบบแสดงจำนวนคำโดยประมาณให้) ใช้ภาษาวิชาการ แบ่งหัวข้อได้ตามความเหมาะสม (ระบบรองรับข้อความธรรมดา) อ้างอิงแนวคิดสำคัญด้วยรูปแบบการอ้างอิงในเนื้อหาแบบ APA 7 (เช่น Whitehead (2019) หรือ (Magill & Anderson, 2021)) ทุกครั้งที่กล่าวถึงทฤษฎีหรือแนวคิด ไม่ต้องแนบรายการอ้างอิงท้ายบท (Reference List) เนื่องจากเป็นข้อสอบปิดหนังสือ"};
+const RUBRIC_WEIGHTS = [{"title": "วิเคราะห์สถานการณ์และผู้เรียน", "max": 8}, {"title": "ใช้แนวคิดจากหลายบทอย่างถูกต้อง", "max": 10}, {"title": "ออกแบบแนวทางและเหตุผลเชิงเปรียบเทียบ", "max": 10}, {"title": "แผนทดลองใช้ ตรวจสอบคุณภาพ และการวิพากษ์", "max": 7}, {"title": "การเขียนเชิงวิชาการและการอ้างอิง", "max": 5}];
+const TOTAL_SCORE = RUBRIC_WEIGHTS.reduce((s,c)=>s+c.max,0);
+const API = '/api/essay';
+const LS_ID = 'pl092028_identity_v1';
+const LS_DRAFT = 'pl092028_draft_v1';
+const AUTOSAVE_MS = 30000;
+const MAX_KEEPALIVE_CHARS = 18000;
+const HIDDEN_GRACE_MS = 300000; // หน้าจอดับ/สลับไปสั้นกว่านี้ (เช่น มือถือล็อกหน้าจอเอง) ไม่นับเป็นออกจากหน้าจอ — เกิน 5 นาทีจึงนับ
+const root = document.getElementById('root');
+
+/* ---------- state ---------- */
+let identity = null;     // {studentId,name,lastname,section,token}
+let deadlineAt = 0;
+let clockOffset = 0;     // serverNow - clientNow
+let leaveCount = 0;
+let examActive = false;
+let submitting = false;
+let closing = false;
+let dirty = false;
+let saving = false;
+let lastSavedAt = 0;
+let pasteEvents = [];
+let away = null;
+let unloading = false;
+const warned = new Set();
+let tickTimer = null, saveTimer = null;
+
+/* ---------- helpers ---------- */
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
+function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,8);}
+function serverNow(){return Date.now()+clockOffset;}
+function pad(n){return String(n).padStart(2,'0');}
+function fmtRemain(ms){ms=Math.max(0,ms);const s=Math.floor(ms/1000);return pad(Math.floor(s/3600))+':'+pad(Math.floor(s%3600/60))+':'+pad(s%60);}
+function fmtClock(ms){const d=new Date(ms);return pad(d.getHours())+':'+pad(d.getMinutes())+':'+pad(d.getSeconds());}
+function countWords(text){
+  const t=String(text||'').trim(); if(!t) return 0;
+  try{ if(typeof Intl!=='undefined'&&Intl.Segmenter){ const seg=new Intl.Segmenter('th',{granularity:'word'}); let n=0; for(const s of seg.segment(t)) if(s.isWordLike) n++; return n; } }catch(e){}
+  return Math.round(t.replace(/\s/g,'').length/4.5);
+}
+function showModal(html, persist){
+  const o=document.createElement('div'); o.className='modal-overlay';
+  o.innerHTML='<div class="modal-box">'+html+'</div>'; document.body.appendChild(o);
+  if(!persist) o.addEventListener('click',e=>{if(e.target===o) o.remove();});
+  return o;
+}
+function closeModals(){document.querySelectorAll('.modal-overlay').forEach(m=>m.remove());}
+async function apiPost(body, tries){
+  tries=tries||1;
+  for(let i=1;i<=tries;i++){
+    try{
+      const res=await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+      const data=await res.json();
+      return {ok:true,status:res.status,data};
+    }catch(e){ if(i<tries) await new Promise(r=>setTimeout(r,700*i)); }
+  }
+  return {ok:false};
+}
+function lsGet(k){try{const v=localStorage.getItem(k);return v?JSON.parse(v):null;}catch(e){return null;}}
+function lsSet(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
+function lsDel(k){try{localStorage.removeItem(k);}catch(e){}}
+
+/* ---------- landing ---------- */
+function renderLanding(notice, prefill){
+  prefill=prefill||{};
+  const rules=EXAM.instructions.map(t=>'<li>'+esc(t)+'</li>').join('');
+  root.innerHTML=`
+  <div class="wrap">
+    <div class="brand">${esc(EXAM.university)} · ${esc(EXAM.faculty)}</div>
+    ${notice?'<div class="notice notice-warn">'+notice+'</div>':''}
+    <div class="card">
+      <h1>${esc(EXAM.title)}</h1>
+      <p style="font-size:17px;color:var(--ink)">รายวิชา ${esc(EXAM.courseCode)} ${esc(EXAM.courseTh)}</p>
+      <div class="pills"><span class="pill">ข้อเขียน 1 ข้อ</span><span class="pill">${TOTAL_SCORE} คะแนน</span><span class="pill">เวลา ${EXAM.hours} ชั่วโมง นับจากกดเริ่ม</span></div>
+    </div>
+    <div class="card">
+      <h2>คำชี้แจงก่อนเริ่มสอบ</h2>
+      <ol class="rules">${rules}</ol>
+    </div>
+    <div class="card">
+      <h2>ข้อมูลผู้เข้าสอบ</h2>
+      <div class="field-row">
+        <div class="field"><label for="f-name">ชื่อ</label><input id="f-name" autocomplete="given-name" value="${esc(prefill.name)}"></div>
+        <div class="field"><label for="f-last">นามสกุล</label><input id="f-last" autocomplete="family-name" value="${esc(prefill.lastname)}"></div>
+      </div>
+      <div class="field-row">
+        <div class="field"><label for="f-sid">รหัสนักศึกษา</label><input id="f-sid" inputmode="numeric" value="${esc(prefill.studentId)}"></div>
+        <div class="field"><label for="f-sec">กลุ่มเรียน (ถ้ามี)</label><input id="f-sec" value="${esc(prefill.section)}"></div>
+      </div>
+      <label class="checkrow"><input type="checkbox" id="f-ok"><span>ข้าพเจ้าได้อ่านและเข้าใจคำชี้แจงทั้งหมด รับทราบว่าห้ามใช้ AI ช่วยเขียนคำตอบ และรับทราบว่าการออกจากหน้าจอครั้งที่ ${EXAM.maxLeaves} จะทำให้ระบบส่งคำตอบและปิดการสอบทันที</span></label>
+      <button class="btn btn-primary btn-block" id="start-btn">เริ่มทำข้อสอบ</button>
+      <p class="footnote">หากเคยเริ่มทำข้อสอบไปแล้วและต้องการทำต่อ ให้กรอกชื่อและรหัสนักศึกษาเดิม แล้วกดปุ่มนี้</p>
+    </div>
+    <div class="admin-link"><a id="admin-open">สำหรับอาจารย์: ตรวจข้อสอบ</a></div>
+  </div>`;
+  document.getElementById('start-btn').addEventListener('click',onStartClick);
+  document.getElementById('admin-open').addEventListener('click',()=>AdminApp.open());
+}
+
+function readForm(){
+  const v=id=>document.getElementById(id).value.trim();
+  return {name:v('f-name'),lastname:v('f-last'),studentId:v('f-sid'),section:v('f-sec')};
+}
+
+function onStartClick(){
+  const f=readForm();
+  if(!f.name||!f.lastname||!f.studentId){
+    showModal('<h3>กรอกข้อมูลไม่ครบ</h3><p>กรุณากรอกชื่อ นามสกุล และรหัสนักศึกษาให้ครบ</p><div class="modal-actions"><button class="btn btn-primary" id="m-ok">เข้าใจแล้ว</button></div>');
+    document.getElementById('m-ok').onclick=closeModals; return;
+  }
+  if(!document.getElementById('f-ok').checked){
+    showModal('<h3>ยังไม่ได้ยืนยัน</h3><p>กรุณาติ๊กช่องยืนยันว่าได้อ่านและเข้าใจคำชี้แจงทั้งหมดก่อนเริ่มสอบ</p><div class="modal-actions"><button class="btn btn-primary" id="m-ok">เข้าใจแล้ว</button></div>');
+    document.getElementById('m-ok').onclick=closeModals; return;
+  }
+  showModal(`<h3>ยืนยันการเริ่มสอบ</h3>
+    <p><b>${esc(f.name)} ${esc(f.lastname)}</b> · รหัส ${esc(f.studentId)}</p>
+    <p>เมื่อกดยืนยัน ระบบจะเริ่มนับเวลา ${EXAM.hours} ชั่วโมงทันที และจะไม่สามารถเริ่มใหม่ได้ (หากเคยเริ่มไปแล้ว ระบบจะพาท่านกลับไปทำต่อ)</p>
+    <div class="modal-actions"><button class="btn btn-ghost" id="m-cancel">ยกเลิก</button><button class="btn btn-primary" id="m-go">ยืนยันเริ่มสอบ</button></div>`, true);
+  document.getElementById('m-cancel').onclick=closeModals;
+  document.getElementById('m-go').onclick=()=>{closeModals();doStart(f);};
+}
+
+function renderBusy(msg){
+  root.innerHTML='<div class="wrap"><div class="card center"><div class="spinner"></div><h3>'+esc(msg)+'</h3><p>กรุณารอสักครู่</p></div></div>';
+}
+
+async function doStart(f){
+  renderBusy('กำลังเริ่มการสอบ...');
+  const r=await apiPost(Object.assign({action:'start'},f),2);
+  handleOpenResult(r,f);
+}
+
+function handleOpenResult(r,f){
+  if(!r.ok){ renderLanding('เชื่อมต่อระบบไม่สำเร็จ กรุณาตรวจสอบอินเทอร์เน็ตแล้วลองอีกครั้ง',f); return; }
+  const d=r.data||{};
+  if(r.status===403&&d.err==='identity_mismatch'){ renderLanding('ชื่อ-นามสกุลไม่ตรงกับที่ลงทะเบียนไว้กับรหัสนักศึกษานี้ กรุณาตรวจสอบการสะกดอีกครั้ง หากยังไม่ได้ให้ติดต่ออาจารย์ผู้สอน',f); return; }
+  if(!d.ok){ renderLanding('ไม่สามารถเริ่มการสอบได้ ('+esc(d.err||'unknown')+') กรุณาลองอีกครั้ง หรือแจ้งอาจารย์ผู้สอน',f); return; }
+  if(d.state==='none'){ lsDel(LS_ID); renderLanding('',f); return; }
+  if(d.state==='submitted'){ lsDel(LS_ID); lsDel(LS_DRAFT); renderClosed(d.reason,f,true); return; }
+  enterExam(f,d);
+}
+
+/* ---------- resume prompt (เครื่องเดิมที่เคยเริ่มไว้) ---------- */
+function renderResumePrompt(saved){
+  root.innerHTML=`<div class="wrap"><div class="card">
+    <h2>พบการทำข้อสอบที่ยังไม่เสร็จในเครื่องนี้</h2>
+    <p><b>${esc(saved.name)} ${esc(saved.lastname)}</b> · รหัส ${esc(saved.studentId)}</p>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" id="r-no">ไม่ใช่ฉัน</button>
+      <button class="btn btn-primary" id="r-yes">ทำต่อ</button>
+    </div></div></div>`;
+  document.getElementById('r-no').onclick=()=>{lsDel(LS_ID);lsDel(LS_DRAFT);renderLanding();};
+  document.getElementById('r-yes').onclick=async()=>{
+    renderBusy('กำลังกู้คืนการสอบ...');
+    const f={studentId:saved.studentId,name:saved.name,lastname:saved.lastname,section:saved.section||''};
+    const r=await apiPost(Object.assign({action:'resume'},f),2);
+    handleOpenResult(r,f);
+  };
+}
+
+/* ---------- exam ---------- */
+function enterExam(f,d){
+  const s=d.session;
+  identity={studentId:f.studentId,name:f.name,lastname:f.lastname,section:f.section||'',token:s.token};
+  deadlineAt=s.deadlineAt; clockOffset=s.serverNow-Date.now(); leaveCount=s.leaveCount||0;
+  lsSet(LS_ID,identity);
+  const server=d.draft||{text:'',savedAt:0,pasteEvents:[]};
+  const local=lsGet(LS_DRAFT);
+  let text=server.text||''; pasteEvents=server.pasteEvents||[];
+  if(local&&local.studentId===identity.studentId&&(local.savedAt+clockOffset)>(server.savedAt||0)&&typeof local.text==='string'){
+    text=local.text; pasteEvents=local.pasteEvents||pasteEvents;
+  }
+  examActive=true; closing=false; submitting=false; dirty=false; away=null; warned.clear();
+  guardBack();
+  renderExam(text);
+  if(text!==(server.text||'')) { dirty=true; saveNow(); }
+}
+/* กันปุ่ม/ท่าทางย้อนกลับ (พบบ่อยบนมือถือ/iPad จากการปัดขอบจอ) ออกจากหน้าสอบโดยไม่ตั้งใจระหว่างทำข้อสอบ */
+function guardBack(){ try{ history.pushState({exam:1},'',location.href); }catch(e){} }
+function studentToast(msg){ const t=document.createElement('div'); t.className='toast'; t.textContent=msg; document.body.appendChild(t); setTimeout(()=>t.remove(),2200); }
+window.addEventListener('popstate',()=>{
+  if(examActive&&!closing&&!submitting){ guardBack(); studentToast('ไม่สามารถย้อนกลับระหว่างทำข้อสอบได้ กดปุ่ม "ส่งคำตอบ" เพื่อจบการสอบ'); }
+});
+
+function caseHtml(){
+  const rubricRows = RUBRIC_WEIGHTS.map(c=>'<li>'+esc(c.title)+' — <b>'+c.max+' คะแนน</b></li>').join('');
+  return `<p>${esc(EXAM.caseIntro)}</p>
+    <p><b>${esc(EXAM.caseDataIntro)}</b></p>
+    <ul>${EXAM.caseData.map(x=>'<li>'+esc(x)+'</li>').join('')}</ul>
+    <p><b>${esc(EXAM.taskIntro)}</b></p>
+    <ol>${EXAM.tasks.map(x=>'<li>'+esc(x)+'</li>').join('')}</ol>
+    <p><b>ข้อกำหนดการตอบ:</b> ${esc(EXAM.answerRequirements)}</p>
+    <p><b>สัดส่วนคะแนน (รวม ${TOTAL_SCORE} คะแนน):</b></p>
+    <ul>${rubricRows}</ul>`;
+}
+
+function renderExam(text){
+  root.innerHTML=`
+  <header class="sticky-bar"><div class="bar-inner">
+    <div class="bar-item"><span class="bar-label">เวลาที่เหลือ</span><span class="bar-value" id="countdown">--:--:--</span></div>
+    <div class="bar-item"><span class="bar-label">ออกจากหน้าจอ</span><span class="bar-value" id="leave-badge">0/${EXAM.maxLeaves}</span></div>
+    <div class="bar-item"><span class="bar-label">บันทึกฉบับร่างล่าสุด</span><span class="bar-value small" id="save-status">—</span></div>
+  </div></header>
+  <div class="wrap">
+    <div class="card">
+      <h2>${esc(EXAM.courseCode)} ${esc(EXAM.courseTh)}</h2>
+      <p class="muted">${esc(identity.name)} ${esc(identity.lastname)} · รหัส ${esc(identity.studentId)}</p>
+      <details class="case" open><summary>โจทย์ (แตะเพื่อซ่อน/แสดง)</summary><div class="case-body">${caseHtml()}</div></details>
+    </div>
+    <div class="card">
+      <label class="lbl" for="answer">คำตอบของท่าน</label>
+      <textarea id="answer" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off" data-gramm="false" data-gramm_editor="false" data-enable-grammarly="false" placeholder="พิมพ์คำตอบที่นี่"></textarea>
+      <div class="counter"><span>จำนวนคำโดยประมาณ <b id="wc">0</b> · <b id="cc">0</b> ตัวอักษร (แนะนำ 1,500–2,000 คำ)</span><span id="net-status"></span></div>
+      <div id="submit-err"></div>
+      <button class="btn btn-accent btn-block" id="submit-btn">ส่งคำตอบ</button>
+      <p class="footnote">ระบบบันทึกฉบับร่างให้อัตโนมัติทุก 30 วินาที ห้ามออกจากหน้าจอนี้จนกว่าจะส่งคำตอบ</p>
+    </div>
+  </div>`;
+  const ta=document.getElementById('answer');
+  ta.value=text||'';
+  ta.addEventListener('input',onInput);
+  ta.addEventListener('paste',onPaste);
+  document.getElementById('submit-btn').addEventListener('click',onSubmitClick);
+  updateCounters(); updateBadge(); updateSaveStatus();
+  clearInterval(tickTimer); clearInterval(saveTimer);
+  tickTimer=setInterval(tick,1000); saveTimer=setInterval(()=>{if(dirty)saveNow();},AUTOSAVE_MS);
+  tick();
+}
+
+function onInput(){
+  dirty=true;
+  const ta=document.getElementById('answer');
+  lsSet(LS_DRAFT,{studentId:identity.studentId,text:ta.value,savedAt:Date.now(),pasteEvents});
+  updateCounters();
+}
+function onPaste(e){
+  let len=0;
+  try{ len=((e.clipboardData||window.clipboardData).getData('text')||'').length; }catch(x){}
+  pasteEvents.push({at:serverNow(),length:len});
+  if(pasteEvents.length>200) pasteEvents.shift();
+  dirty=true;
+}
+function updateCounters(){
+  const ta=document.getElementById('answer'); if(!ta) return;
+  document.getElementById('wc').textContent=countWords(ta.value).toLocaleString('th-TH');
+  document.getElementById('cc').textContent=ta.value.replace(/\s/g,'').length.toLocaleString('th-TH');
+}
+function updateBadge(){
+  const el=document.getElementById('leave-badge'); if(!el) return;
+  el.textContent=leaveCount+'/'+EXAM.maxLeaves;
+  el.className='bar-value'+(leaveCount>=EXAM.maxLeaves-1&&leaveCount>0?' low':'');
+}
+function updateSaveStatus(msg){
+  const el=document.getElementById('save-status'); if(!el) return;
+  el.textContent=msg||(lastSavedAt?fmtClock(lastSavedAt):'ยังไม่บันทึก');
+}
+function tick(){
+  if(!examActive) return;
+  const rem=deadlineAt-serverNow();
+  const el=document.getElementById('countdown');
+  if(el){ el.textContent=fmtRemain(rem); el.className='bar-value'+(rem<600000?' low':(rem<3600000?' warn':'')); }
+  if(rem<=0&&!submitting) finalSubmit(true);
+}
+
+async function saveNow(){
+  if(!examActive||saving||submitting) return;
+  const ta=document.getElementById('answer'); if(!ta) return;
+  saving=true; const sent=ta.value;
+  const r=await apiPost({action:'save',studentId:identity.studentId,token:identity.token,text:sent,pasteEvents});
+  saving=false;
+  if(r.ok&&r.data&&r.data.ok){
+    if(r.data.state==='submitted'){ closeExam(r.data.reason); return; }
+    clockOffset=r.data.serverNow-Date.now();
+    lastSavedAt=Date.now();
+    if(ta.value===sent) dirty=false;
+    if(typeof r.data.leaveCount==='number'){ leaveCount=r.data.leaveCount; updateBadge(); }
+    updateSaveStatus(); const n=document.getElementById('net-status'); if(n) n.textContent='';
+  }else{
+    const n=document.getElementById('net-status'); if(n) n.textContent='บันทึกขึ้นระบบไม่สำเร็จ (เก็บไว้ในเครื่องแล้ว จะลองใหม่)';
+  }
+}
+
+/* ---------- leaving the screen ---------- */
+function bodyForLeave(ev){
+  const ta=document.getElementById('answer');
+  const body={action:'leave',studentId:identity.studentId,token:identity.token,eventId:ev.id,kind:ev.kind,at:ev.start+clockOffset,counted:ev.counted,durationMs:ev.durationMs==null?null:ev.durationMs,pasteEvents};
+  if(ta&&ta.value.length<=MAX_KEEPALIVE_CHARS) body.text=ta.value;
+  return body;
+}
+async function reportLeave(ev,keepalive){
+  try{
+    const res=await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(bodyForLeave(ev)),keepalive:!!keepalive});
+    return {ok:true,data:await res.json()};
+  }catch(e){ return {ok:false}; }
+}
+async function reportLeaveRetry(ev){
+  for(let i=0;i<4;i++){
+    const r=await reportLeave(ev,false);
+    if(r.ok&&r.data&&r.data.ok) return r;
+    await new Promise(x=>setTimeout(x,1500*(i+1)));
+  }
+  return {ok:false};
+}
+function applyLeaveResponse(r,ev,showNow){
+  if(!r||!r.ok||!r.data||!r.data.ok) return;
+  if(typeof r.data.leaveCount==='number'){ leaveCount=r.data.leaveCount; updateBadge(); }
+  if(r.data.state==='submitted'){ closeExam(r.data.reason||'auto_leave'); return; }
+  if(showNow&&ev.counted&&!warned.has(ev.id)){ warned.add(ev.id); showLeaveWarning(); }
+}
+function showLeaveWarning(){
+  const remain=EXAM.maxLeaves-leaveCount;
+  const lastWarning=remain<=1;
+  showModal(`<h3>⚠️ ตรวจพบการออกจากหน้าจอ</h3>
+    <p>ระบบตรวจพบว่าท่านออกจากหน้าจอข้อสอบนานเกินกำหนด (ครั้งที่ ${leaveCount} จาก ${EXAM.maxLeaves}) คำตอบของท่านยังอยู่ครบ และระบบบันทึกประวัติไว้ให้ผู้สอนแล้ว</p>
+    <p><b>${lastWarning?'หากออกจากหน้าจอลักษณะนี้อีกครั้ง ระบบจะส่งคำตอบที่พิมพ์ไว้และปิดการสอบทันที':'หากออกจากหน้าจอลักษณะนี้ครบอีก '+remain+' ครั้ง (ครั้งที่ '+EXAM.maxLeaves+') ระบบจะบังคับส่งคำตอบและปิดการสอบทันที'}</b></p>
+    <div class="modal-actions"><button class="btn btn-primary" id="w-ok">เข้าใจแล้ว ทำข้อสอบต่อ</button></div>`, true);
+  document.getElementById('w-ok').onclick=closeModals;
+}
+function inactive(){return !examActive||unloading||closing||submitting;}
+function onHidden(){
+  if(inactive()) return;
+  const ta=document.getElementById('answer'); if(ta&&dirty) lsSet(LS_DRAFT,{studentId:identity.studentId,text:ta.value,savedAt:Date.now(),pasteEvents});
+  if(!away){
+    const ev=away={id:uid(),start:Date.now(),kind:'hidden',counted:false,durationMs:null};
+    reportLeave(ev,true).then(r=>applyLeaveResponse(r,ev,false)); // บันทึกไว้ก่อนทันที (ยังไม่นับ) กันกรณีไม่กลับมาเลย
+    ev.timer=setTimeout(()=>{
+      if(away===ev&&!ev.counted){
+        ev.counted=true;
+        reportLeave(ev,true).then(r=>applyLeaveResponse(r,ev,false));
+      }
+    },HIDDEN_GRACE_MS);
+  }
+}
+function checkBack(){
+  if(!away||!examActive||closing||submitting) return;
+  if(document.hidden) return;
+  clearTimeout(away.timer);
+  const ev=away; away=null; ev.durationMs=Date.now()-ev.start;
+  reportLeaveRetry(ev).then(r=>applyLeaveResponse(r,ev,true));
+}
+document.addEventListener('visibilitychange',()=>{ if(document.hidden) onHidden(); else checkBack(); });
+window.addEventListener('focus',checkBack);
+window.addEventListener('beforeunload',()=>{unloading=true;});
+window.addEventListener('pagehide',e=>{ if(!e.persisted) unloading=true; });
+window.addEventListener('pageshow',e=>{ if(e.persisted) unloading=false; });
+
+/* ---------- submit / close ---------- */
+function onSubmitClick(){
+  const ta=document.getElementById('answer'); const w=countWords(ta.value);
+  showModal(`<h3>ยืนยันการส่งคำตอบ</h3>
+    <p>จำนวนคำโดยประมาณ <b>${w.toLocaleString('th-TH')}</b> คำ${w<800?' <span style="color:var(--danger)">(สั้นกว่าที่แนะนำ 1,500–2,000 คำ)</span>':''}</p>
+    <p>เมื่อส่งแล้วจะแก้ไขไม่ได้ และทำข้อสอบซ้ำไม่ได้</p>
+    <div class="modal-actions"><button class="btn btn-ghost" id="s-no">กลับไปแก้ไข</button><button class="btn btn-primary" id="s-yes">ยืนยันส่ง</button></div>`, true);
+  document.getElementById('s-no').onclick=closeModals;
+  document.getElementById('s-yes').onclick=()=>{closeModals();finalSubmit(false);};
+}
+async function finalSubmit(auto){
+  if(submitting||closing) return;
+  submitting=true;
+  const ta=document.getElementById('answer'); const text=ta?ta.value:'';
+  const btn=document.getElementById('submit-btn'); if(btn){btn.disabled=true;btn.textContent='กำลังส่ง...';}
+  const r=await apiPost({action:'submit',studentId:identity.studentId,token:identity.token,text,pasteEvents},4);
+  if(r.ok&&r.data&&r.data.ok){ closeExam(r.data.reason||(auto?'timeout':'manual')); return; }
+  submitting=false;
+  if(btn){btn.disabled=false;btn.textContent='ส่งคำตอบ';}
+  const box=document.getElementById('submit-err');
+  if(box) box.innerHTML='<div class="notice notice-warn">ส่งไม่สำเร็จ (อาจเกิดจากอินเทอร์เน็ต) คำตอบยังอยู่ครบในเครื่อง กรุณากดส่งอีกครั้ง</div>';
+  if(auto) setTimeout(()=>{ if(examActive&&!submitting) finalSubmit(true); },5000);
+}
+function closeExam(reason){
+  if(closing) return;
+  closing=true; examActive=false;
+  clearInterval(tickTimer); clearInterval(saveTimer);
+  const f=identity?{name:identity.name,lastname:identity.lastname,studentId:identity.studentId,section:identity.section}:null;
+  lsDel(LS_ID); lsDel(LS_DRAFT);
+  closeModals();
+  renderClosed(reason,f,false);
+}
+function renderClosed(reason,f,alreadyBefore){
+  const msg={
+    manual:['✅','ส่งคำตอบเรียบร้อยแล้ว','ระบบบันทึกคำตอบของท่านแล้ว'],
+    auto_leave:['🔒','ระบบส่งคำตอบและปิดการสอบแล้ว','เนื่องจากตรวจพบการออกจากหน้าจอครั้งที่ '+EXAM.maxLeaves+' ระบบจึงส่งคำตอบที่พิมพ์ไว้ให้โดยอัตโนมัติ'],
+    timeout:['⏰','หมดเวลาทำข้อสอบ','ระบบส่งคำตอบฉบับร่างล่าสุดที่บันทึกไว้ให้โดยอัตโนมัติ']
+  }[reason]||['✅','การสอบนี้ปิดแล้ว','มีการส่งคำตอบของรหัสนักศึกษานี้เรียบร้อยแล้ว'];
+  root.innerHTML=`<div class="wrap"><div class="card center">
+    <div class="big-icon">${msg[0]}</div><h1>${esc(msg[1])}</h1>
+    ${f?'<p>'+esc(f.name)+' '+esc(f.lastname)+' · รหัส '+esc(f.studentId)+'</p>':''}
+    <p>${esc(msg[2])}</p>
+    <div class="notice notice-info" style="text-align:left;margin-top:14px">ระบบไม่แสดงคะแนน ผู้สอนจะแจ้งผลการสอบภายหลัง หากพบว่าเกิดความผิดพลาดของระบบ กรุณาติดต่ออาจารย์ผู้สอนโดยตรง</div>
+    <button class="btn btn-ghost" id="home-btn" style="margin-top:8px">กลับหน้าแรก</button>
+  </div></div>`;
+  document.getElementById('home-btn').onclick=()=>{identity=null;renderLanding();};
+}
+
+
+/* ================= สำหรับอาจารย์ (ซ่อนหลังลิงก์ในหน้าแรก + รหัสผ่าน) ================= */
+const AdminApp = (function(){
+let RUBRIC = []; // โหลดจากเซิร์ฟเวอร์หลังใส่รหัสผ่านอาจารย์ถูกต้องเท่านั้น (ไม่ฝังในหน้าเว็บ)
+let TOTAL_SCORE = 0;
+const EXAM_TITLE = EXAM.courseCode+' '+EXAM.courseTh+' · '+EXAM.title;
+const API = '/api/essay';
+const SS_KEY = 'pl092028_admin_pass';
+const root = document.getElementById('root');
+let passcode = '';
+let items = [];
+let serverOffset = 0;
+let sortKey = 'submittedAt', sortDir = -1;
+let filterMode = 'all', searchText = '';
+let visibleRows = [];
+let detailId = null;
+
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
+function pad(n){return String(n).padStart(2,'0');}
+function fmtDT(ms){ if(!ms) return '—'; const d=new Date(ms); return pad(d.getDate())+'/'+pad(d.getMonth()+1)+' '+pad(d.getHours())+':'+pad(d.getMinutes()); }
+function fmtDur(ms){ if(ms==null) return '—'; const s=Math.round(ms/1000); if(s<60) return s+' วินาที'; const m=Math.floor(s/60); if(m<60) return m+' นาที'; return Math.floor(m/60)+' ชม. '+(m%60)+' นาที'; }
+function reasonLabel(r){return {manual:'ส่งเอง',auto_leave:'ปิดอัตโนมัติ (ออกจากหน้าจอ)',timeout:'หมดเวลา'}[r]||'—';}
+function showModal(html,persist){const o=document.createElement('div');o.className='modal-overlay';o.innerHTML='<div class="modal-box">'+html+'</div>';document.body.appendChild(o);if(!persist)o.addEventListener('click',e=>{if(e.target===o)o.remove();});return o;}
+function closeModals(){document.querySelectorAll('.modal-overlay').forEach(m=>m.remove());}
+function toast(msg){const t=document.createElement('div');t.className='toast';t.textContent=msg;document.body.appendChild(t);setTimeout(()=>t.remove(),2200);}
+
+async function adm(method, query, body){
+  const opts={method,headers:{'X-Admin-Passcode':passcode}};
+  if(body){opts.headers['Content-Type']='application/json';opts.body=JSON.stringify(body);}
+  const url=method==='GET'?API+'?'+new URLSearchParams(query):API;
+  try{const res=await fetch(url,opts);return {ok:true,status:res.status,data:await res.json()};}
+  catch(e){return {ok:false};}
+}
+
+/* ---------- gate ---------- */
+function renderGate(msg){
+  root.innerHTML=`<div class="wrap"><div class="brand">สำหรับอาจารย์ผู้สอน</div>
+  <div class="card" style="max-width:440px;margin:40px auto">
+    <h2>ตรวจข้อสอบปลายภาค</h2><p>${esc(EXAM_TITLE)}</p>
+    ${msg?'<div class="notice notice-warn">'+msg+'</div>':''}
+    <div class="field"><label for="pw">รหัสผ่านอาจารย์</label><input id="pw" type="password" autocomplete="current-password"></div>
+    <button class="btn btn-primary btn-block" id="pw-go">เข้าสู่ระบบ</button>
+  </div></div>`;
+  const go=async()=>{
+    const v=document.getElementById('pw').value; if(!v) return;
+    const btn=document.getElementById('pw-go'); btn.disabled=true; btn.textContent='กำลังตรวจสอบ...';
+    passcode=v;
+    const r=await adm('GET',{action:'auth'});
+    if(!r.ok){renderGate('เชื่อมต่อระบบไม่สำเร็จ');return;}
+    if(r.status===200&&r.data.ok){ try{sessionStorage.setItem(SS_KEY,v);}catch(e){} loadList(); return; }
+    passcode='';
+    if(r.status===429){renderGate('ใส่รหัสผิดหลายครั้งเกินไป กรุณารอ '+Math.ceil((r.data.retryAfterSec||600)/60)+' นาที แล้วลองใหม่');return;}
+    renderGate('รหัสผ่านไม่ถูกต้อง');
+  };
+  document.getElementById('pw-go').onclick=go;
+  document.getElementById('pw').addEventListener('keydown',e=>{if(e.key==='Enter')go();});
+}
+
+/* ---------- list ---------- */
+async function loadList(){
+  root.innerHTML='<div class="wrap"><div class="card center"><div class="spinner"></div><h3>กำลังโหลดรายการ...</h3></div></div>';
+  const r=await adm('GET',{action:'list'});
+  if(!r.ok){renderGate('เชื่อมต่อระบบไม่สำเร็จ');return;}
+  if(r.status===401||r.status===429){ try{sessionStorage.removeItem(SS_KEY);}catch(e){} passcode=''; renderGate('กรุณาเข้าสู่ระบบอีกครั้ง'); return; }
+  if(!r.data.ok){renderGate('เกิดข้อผิดพลาด: '+esc(r.data.err||''));return;}
+  if(!RUBRIC.length){
+    const rr=await adm('GET',{action:'rubric'});
+    if(!rr.ok||!rr.data||!rr.data.ok||!Array.isArray(rr.data.rubric)||!rr.data.rubric.length){renderGate('โหลดเกณฑ์การให้คะแนนไม่สำเร็จ กรุณาลองใหม่');return;}
+    RUBRIC=rr.data.rubric; TOTAL_SCORE=RUBRIC.reduce((s,c)=>s+c.max,0);
+  }
+  items=r.data.items||[]; serverOffset=r.data.serverNow-Date.now();
+  renderList();
+}
+function statusOf(it){return it.status==='submitted'?(it.gradeTotal==null?'ungraded':'graded'):'prog';}
+function matches(it){
+  const q=searchText.trim().toLowerCase();
+  if(q&&!(it.name+' '+it.lastname+' '+it.studentId+' '+(it.section||'')).toLowerCase().includes(q)) return false;
+  if(filterMode==='prog') return it.status!=='submitted';
+  if(filterMode==='ungraded') return it.status==='submitted'&&it.gradeTotal==null;
+  if(filterMode==='graded') return it.gradeTotal!=null;
+  if(filterMode==='leave') return it.leaveCount>0;
+  if(filterMode==='auto') return it.submitReason==='auto_leave';
+  if(filterMode==='paste') return it.maxPaste>=300;
+  return true;
+}
+function sortVal(it,k){
+  if(k==='name') return (it.name+' '+it.lastname);
+  if(k==='status') return statusOf(it);
+  const v=it[k]; return v==null?-1:v;
+}
+function renderList(){
+  const sub=items.filter(i=>i.status==='submitted'), graded=items.filter(i=>i.gradeTotal!=null);
+  const avg=graded.length?graded.reduce((a,b)=>a+b.gradeTotal,0)/graded.length:null;
+  const mx=graded.length?Math.max(...graded.map(g=>g.gradeTotal)):null, mn=graded.length?Math.min(...graded.map(g=>g.gradeTotal)):null;
+  visibleRows=items.filter(matches).sort((a,b)=>{
+    const x=sortVal(a,sortKey), y=sortVal(b,sortKey);
+    const c=(typeof x==='string'||typeof y==='string')?String(x).localeCompare(String(y),'th'):(x-y);
+    return c*sortDir;
+  });
+  const cols=[['name','ชื่อ-นามสกุล'],['studentId','รหัส'],['section','กลุ่ม'],['status','สถานะ'],['startedAt','เริ่ม'],['submittedAt','ส่งเมื่อ'],['leaveCount','ออกจากหน้าจอ'],['maxPaste','วางข้อความ'],['wordCount','คำ'],['gradeTotal','คะแนน(/'+TOTAL_SCORE+')']];
+  const now=Date.now()+serverOffset;
+  const rows=visibleRows.map((it,i)=>{
+    let st;
+    if(it.status==='submitted') st='<span class="tag '+(it.submitReason==='manual'?'done':'auto')+'">'+esc(reasonLabel(it.submitReason))+'</span>';
+    else st='<span class="tag prog">กำลังทำ · เหลือ '+esc(fmtDur(Math.max(0,it.deadlineAt-now)))+'</span>';
+    const leave=it.leaveCount?'<span class="tag warn">'+it.leaveCount+' ครั้ง</span>':'—';
+    const paste=it.maxPaste>=300?'<span class="tag warn">'+it.pasteCount+' ครั้ง · สูงสุด '+it.maxPaste.toLocaleString('th-TH')+' ตัวอักษร</span>':(it.pasteCount?it.pasteCount+' ครั้ง':'—');
+    const g=it.gradeTotal!=null?'<b>'+it.gradeTotal+'</b>':(it.status==='submitted'?'<span class="muted">ยังไม่ตรวจ</span>':'—');
+    return `<tr class="row" data-i="${i}"><td>${esc(it.name)} ${esc(it.lastname)}</td><td>${esc(it.studentId)}</td><td>${esc(it.section||'')}</td><td>${st}</td><td>${fmtDT(it.startedAt)}</td><td>${fmtDT(it.submittedAt)}</td><td>${leave}</td><td>${paste}</td><td>${it.wordCount||'—'}</td><td>${g}</td><td><button class="btn btn-ghost btn-sm" data-open="${i}">${it.status==='submitted'?(it.gradeTotal!=null?'ดู/แก้':'ตรวจ'):'ดู'}</button></td></tr>`;
+  }).join('');
+  root.innerHTML=`<div class="wrap wide">
+    <div class="topbar"><div><div class="brand" style="margin:0">สำหรับอาจารย์ผู้สอน</div><h1>ตรวจข้อสอบปลายภาค พล 092028</h1></div>
+      <div class="actions"><button class="btn btn-ghost btn-sm" id="b-refresh">รีเฟรช</button><button class="btn btn-ghost btn-sm" id="b-csv">ส่งออก CSV</button><button class="btn btn-ghost btn-sm" id="b-out">ออกจากระบบ</button></div></div>
+    <div class="card">
+      <div class="pills"><span class="pill">เริ่มสอบแล้ว ${items.length} คน</span><span class="pill">ส่งแล้ว ${sub.length}</span><span class="pill ok">ตรวจแล้ว ${graded.length}</span><span class="pill">รอตรวจ ${sub.length-graded.length}</span>${avg!=null?'<span class="pill">เฉลี่ย '+avg.toFixed(2)+' · สูงสุด '+mx+' · ต่ำสุด '+mn+'</span>':''}</div>
+      <div class="toolbar"><input class="input" id="q" placeholder="ค้นหาชื่อ รหัส หรือกลุ่ม" value="${esc(searchText)}">
+        <select class="input" id="flt"><option value="all">ทั้งหมด</option><option value="prog">กำลังทำ</option><option value="ungraded">ส่งแล้ว · รอตรวจ</option><option value="graded">ตรวจแล้ว</option><option value="leave">มีการออกจากหน้าจอ</option><option value="auto">ปิดอัตโนมัติ (ออกจากหน้าจอครบกำหนด)</option><option value="paste">วางข้อความก้อนใหญ่ (≥ 300 ตัวอักษร)</option></select></div>
+      <div class="tscroll"><table class="t"><thead><tr>${cols.map(c=>'<th data-k="'+c[0]+'">'+c[1]+(sortKey===c[0]?(sortDir>0?' ▲':' ▼'):'')+'</th>').join('')}<th></th></tr></thead><tbody>${rows||'<tr><td colspan="11" class="muted" style="padding:20px">ไม่พบรายการ</td></tr>'}</tbody></table></div>
+      <p class="footnote">ประวัติการออกจากหน้าจอและการวางข้อความเป็นข้อมูลประกอบการพิจารณา ไม่ควรใช้ตัดสินการทุจริตโดยลำพัง (ระบบอาจตรวจจับผิดพลาดได้ เช่น การแจ้งเตือนของอุปกรณ์)</p>
+    </div></div>`;
+  document.getElementById('flt').value=filterMode;
+  document.getElementById('q').addEventListener('input',e=>{searchText=e.target.value;const pos=e.target.selectionStart;renderList();const q=document.getElementById('q');q.focus();try{q.setSelectionRange(pos,pos);}catch(x){}});
+  document.getElementById('flt').addEventListener('change',e=>{filterMode=e.target.value;renderList();});
+  document.getElementById('b-refresh').onclick=loadList;
+  document.getElementById('b-csv').onclick=exportCsv;
+  document.getElementById('b-out').onclick=()=>{try{sessionStorage.removeItem(SS_KEY);}catch(e){}passcode='';items=[];RUBRIC=[];TOTAL_SCORE=0;renderGate();};
+  root.querySelectorAll('th[data-k]').forEach(th=>th.onclick=()=>{const k=th.getAttribute('data-k');if(sortKey===k)sortDir*=-1;else{sortKey=k;sortDir=1;}renderList();});
+  root.querySelectorAll('[data-open]').forEach(b=>b.onclick=()=>openDetail(visibleRows[+b.getAttribute('data-open')].studentId));
+  root.querySelectorAll('tr.row').forEach(tr=>tr.ondblclick=()=>openDetail(visibleRows[+tr.getAttribute('data-i')].studentId));
+}
+
+function csvCell(v){const s=String(v==null?'':v);return /[",\n\r]/.test(s)?'"'+s.replace(/"/g,'""')+'"':s;}
+function exportCsv(){
+  const head=['ลำดับ','ชื่อ','นามสกุล','รหัสนักศึกษา','กลุ่ม','สถานะ','วิธีส่ง','เริ่มสอบ','ส่งเมื่อ','ออกจากหน้าจอ(ครั้ง)','วางข้อความ(ครั้ง)','วางสูงสุด(ตัวอักษร)','จำนวนคำ']
+    .concat(RUBRIC.map((c,i)=>(i+1)+'. '+c.title+' (/'+c.max+')')).concat(['รวม (/'+TOTAL_SCORE+')','ความเห็นผู้ตรวจ']);
+  const iso=ms=>ms?new Date(ms).toLocaleString('th-TH'):'';
+  const lines=[head.map(csvCell).join(',')];
+  items.slice().sort((a,b)=>String(a.studentId).localeCompare(String(b.studentId))).forEach((it,i)=>{
+    const gp=it.gradePoints||{};
+    lines.push([i+1,it.name,it.lastname,it.studentId,it.section||'',it.status==='submitted'?'ส่งแล้ว':'กำลังทำ',reasonLabel(it.submitReason)==='—'?'':reasonLabel(it.submitReason),iso(it.startedAt),iso(it.submittedAt),it.leaveCount,it.pasteCount,it.maxPaste,it.wordCount]
+      .concat(RUBRIC.map(c=>it.gradePoints?gp[c.id]:'')).concat([it.gradeTotal==null?'':it.gradeTotal,it.gradeComment||'']).map(csvCell).join(','));
+  });
+  const blob=new Blob(['\uFEFF'+lines.join('\r\n')],{type:'text/csv;charset=utf-8'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='ผลตรวจข้อสอบ_พล092028.csv';document.body.appendChild(a);a.click();a.remove();
+}
+
+/* ---------- detail + grading ---------- */
+function levelIdx(c,p){for(let i=0;i<c.levels.length;i++){if(p>=c.levels[i].min&&p<=c.levels[i].max)return i;}return -1;}
+async function openDetail(id){
+  detailId=id;
+  root.innerHTML='<div class="wrap"><div class="card center"><div class="spinner"></div><h3>กำลังโหลด...</h3></div></div>';
+  const r=await adm('GET',{action:'detail',studentId:id});
+  if(!r.ok||!r.data.ok){toast('โหลดไม่สำเร็จ');renderList();return;}
+  renderDetail(r.data);
+}
+function leaveKind(k){return k==='hidden'?'ซ่อนหน้าต่าง/สลับแท็บ/แอป':'เสียโฟกัสหน้าต่าง';}
+function detectCitations(text){
+  if(!text) return [];
+  const found=new Set();
+  const re1=/\(([^()]{2,80}?(?:19|20)\d{2}[a-z]?)\)/g;
+  const re2=/\b([A-Za-z][A-Za-z&.,'\s]{1,60}?)\s*\((?:19|20)\d{2}[a-z]?\)/g;
+  let m;
+  while((m=re1.exec(text))){ found.add('('+m[1].trim()+')'); }
+  while((m=re2.exec(text))){ found.add(m[0].trim()); }
+  return Array.from(found).sort();
+}
+function renderDetail(d){
+  const a=d.att, e=d.essay, g=d.grade;
+  const submitted=a.status==='submitted';
+  const idx=visibleRows.findIndex(x=>x.studentId===a.studentId);
+  const prev=idx>0?visibleRows[idx-1]:null, next=(idx>=0&&idx<visibleRows.length-1)?visibleRows[idx+1]:null;
+  const used=(a.submittedAt||Math.min(Date.now()+serverOffset,a.deadlineAt))-a.startedAt;
+  const evRows=(a.leaveEvents||[]).map(ev=>`<tr><td>${fmtDT(ev.at)}</td><td>${esc(leaveKind(ev.kind))}</td><td>${esc(fmtDur(ev.durationMs))}</td><td>${ev.counted?'<span class="tag auto">นับ</span>':'<span class="tag prog">ไม่นับ</span>'}</td></tr>`).join('');
+  const pasteRows=(e.pasteEvents||[]).map(p=>`<tr><td>${fmtDT(p.at)}</td><td>${p.length.toLocaleString('th-TH')} ตัวอักษร ${p.length>=300?'<span class="tag warn">ก้อนใหญ่</span>':''}</td></tr>`).join('');
+  const citations=detectCitations(e.text);
+  const crit=RUBRIC.map((c,i)=>`
+    <div class="crit" data-c="${c.id}">
+      <div class="crit-head"><b>${i+1}. ${esc(c.title)}</b><span class="muted">เต็ม ${c.max}</span></div>
+      <div class="levels">${c.levels.map((l,j)=>`<button type="button" class="lvl" data-c="${c.id}" data-j="${j}">${esc(l.name)}<small>${l.min===l.max?l.min:l.min+'–'+l.max}</small></button>`).join('')}</div>
+      <div class="pointrow"><span class="muted">คะแนน</span><button type="button" class="step" data-c="${c.id}" data-d="-1">−</button><input type="number" inputmode="numeric" min="0" max="${c.max}" step="1" data-p="${c.id}"><button type="button" class="step" data-c="${c.id}" data-d="1">+</button></div>
+      <div class="lvl-desc" data-desc="${c.id}"></div>
+      <div class="ai-reason" data-ai="${c.id}"></div>
+      <details class="kp"><summary>แนวคำตอบ / ประเด็นที่ควรพบ</summary><ul>${c.keyPoints.map(k=>'<li>'+esc(k)+'</li>').join('')}</ul></details>
+    </div>`).join('');
+  root.innerHTML=`<div class="wrap wide">
+    <div class="topbar"><div class="navrow"><button class="btn btn-ghost btn-sm" id="d-back">‹ กลับรายการ</button>
+      <button class="btn btn-ghost btn-sm" id="d-prev" ${prev?'':'disabled'}>‹ คนก่อนหน้า</button><button class="btn btn-ghost btn-sm" id="d-next" ${next?'':'disabled'}>คนถัดไป ›</button></div>
+      <button class="btn btn-ghost btn-sm" id="d-del" style="color:var(--danger)">ลบรายการนี้</button></div>
+    <div class="split">
+      <div>
+        <div class="card">
+          <h2>${esc(a.name)} ${esc(a.lastname)}</h2>
+          <table class="kv"><tbody>
+            <tr><td>รหัสนักศึกษา</td><td>${esc(a.studentId)}</td></tr>
+            <tr><td>กลุ่มเรียน</td><td>${esc(a.section||'—')}</td></tr>
+            <tr><td>สถานะ</td><td>${submitted?esc(reasonLabel(a.submitReason)):'กำลังทำ (แสดงฉบับร่างล่าสุด)'}</td></tr>
+            <tr><td>เริ่มสอบ</td><td>${fmtDT(a.startedAt)}</td></tr>
+            <tr><td>ส่งเมื่อ</td><td>${submitted?fmtDT(a.submittedAt):'—'}</td></tr>
+            <tr><td>ใช้เวลา</td><td>${esc(fmtDur(used))}</td></tr>
+            <tr><td>ความยาว</td><td>ประมาณ ${e.wordCount.toLocaleString('th-TH')} คำ · ${e.charCount.toLocaleString('th-TH')} ตัวอักษร</td></tr>
+            <tr><td>ออกจากหน้าจอ</td><td>${a.leaveCount} ครั้ง (นับตามกติกา)</td></tr>
+          </tbody></table>
+          ${evRows?'<h3 style="margin-top:14px">ประวัติการออกจากหน้าจอ</h3><div class="tscroll"><table class="t"><thead><tr><th>เวลา</th><th>ประเภท</th><th>นาน</th><th>ผล</th></tr></thead><tbody>'+evRows+'</tbody></table></div>':'<p class="muted" style="margin-top:12px">ไม่มีประวัติการออกจากหน้าจอ</p>'}
+          ${pasteRows?'<h3 style="margin-top:14px">ประวัติการวางข้อความ (paste)</h3><div class="tscroll"><table class="t"><thead><tr><th>เวลา</th><th>ขนาด</th></tr></thead><tbody>'+pasteRows+'</tbody></table></div>':'<p class="muted">ไม่มีประวัติการวางข้อความ</p>'}
+          <h3 style="margin-top:14px">การอ้างอิงแบบ APA ที่ตรวจพบ${citations.length?' ('+citations.length+' รายการ)':''}</h3>
+          ${citations.length?'<ul class="cite-list">'+citations.map(c=>'<li>'+esc(c)+'</li>').join('')+'</ul>':'<p class="muted">ไม่พบรูปแบบการอ้างอิงในเนื้อหา (อาจพิมพ์ในรูปแบบอื่น กรุณาตรวจสอบด้วยตนเอง)</p>'}
+          <p class="footnote">ตรวจจับด้วยรูปแบบข้อความ (ผู้แต่ง, ปี) เป็นตัวช่วยสังเกตเบื้องต้นเท่านั้น อาจพลาดหรือพบเกินจริงได้ ไม่ใช่คำตัดสินสุดท้าย</p>
+        </div>
+        <div class="card"><h3>คำตอบของนักศึกษา</h3><div class="essay" id="essay"></div></div>
+      </div>
+      <div class="sticky-col">
+        <div class="card">
+          <h2>ให้คะแนนตามเกณฑ์</h2>
+          ${submitted?'':'<div class="notice notice-warn">นักศึกษายังไม่ส่งข้อสอบ จึงยังให้คะแนนไม่ได้</div>'}
+          ${submitted?'<button class="btn btn-ghost btn-block" id="ai-suggest" style="margin-bottom:12px">✨ ให้ AI ช่วยประเมิน (เสนอคะแนน+เหตุผล ยังต้องตรวจทานก่อนบันทึก)</button><div id="ai-status" class="footnote"></div>':''}
+          ${crit}
+          <div class="totalbar"><span>คะแนนรวม</span><span><b id="total">—</b> / ${TOTAL_SCORE}</span></div>
+          <label class="lbl" for="cmt">ความเห็นผู้ตรวจ (ไม่บังคับ)</label>
+          <textarea class="cmt" id="cmt"></textarea>
+          <button class="btn btn-primary btn-block" id="save-grade" style="margin-top:12px" ${submitted?'':'disabled'}>บันทึกคะแนน</button>
+          <div id="save-msg" class="footnote"></div>
+        </div>
+      </div>
+    </div></div>`;
+  document.getElementById('essay').textContent=e.text||'(ไม่มีข้อความ)';
+  document.getElementById('cmt').value=(g&&g.comment)||'';
+  document.getElementById('d-back').onclick=()=>renderList();
+  if(prev) document.getElementById('d-prev').onclick=()=>openDetail(prev.studentId);
+  if(next) document.getElementById('d-next').onclick=()=>openDetail(next.studentId);
+  document.getElementById('d-del').onclick=()=>confirmDelete(a);
+
+  const inputs={}; RUBRIC.forEach(c=>{inputs[c.id]=root.querySelector('input[data-p="'+c.id+'"]'); if(g&&g.points) inputs[c.id].value=g.points[c.id];});
+  function sync(c){
+    const inp=inputs[c.id]; let v=inp.value===''?null:Math.round(Number(inp.value));
+    if(v!=null){ v=Math.max(0,Math.min(c.max,v)); inp.value=v; }
+    const j=v==null?-1:levelIdx(c,v);
+    root.querySelectorAll('.lvl[data-c="'+c.id+'"]').forEach(b=>b.classList.toggle('on',+b.getAttribute('data-j')===j));
+    root.querySelector('[data-desc="'+c.id+'"]').textContent=j>=0?c.levels[j].name+': '+c.levels[j].desc:'';
+    updateTotal();
+  }
+  function updateTotal(){
+    let t=0, all=true;
+    RUBRIC.forEach(c=>{const v=inputs[c.id].value; if(v==='') all=false; else t+=Number(v);});
+    document.getElementById('total').textContent=all?t:(RUBRIC.some(c=>inputs[c.id].value!=='')?t+'*':'—');
+  }
+  RUBRIC.forEach(c=>{
+    inputs[c.id].disabled=!submitted;
+    inputs[c.id].addEventListener('input',()=>sync(c));
+    root.querySelectorAll('.lvl[data-c="'+c.id+'"]').forEach(b=>b.onclick=()=>{ if(!submitted) return; const l=c.levels[+b.getAttribute('data-j')]; const cur=inputs[c.id].value===''?null:Number(inputs[c.id].value); if(cur==null||cur<l.min||cur>l.max) inputs[c.id].value=l.max; sync(c); });
+    root.querySelectorAll('.step[data-c="'+c.id+'"]').forEach(b=>b.onclick=()=>{ if(!submitted) return; const cur=inputs[c.id].value===''?(b.getAttribute('data-d')==='1'?-1:c.max+1):Number(inputs[c.id].value); inputs[c.id].value=Math.max(0,Math.min(c.max,cur+Number(b.getAttribute('data-d')))); sync(c); });
+    sync(c);
+  });
+  const aiBtn=document.getElementById('ai-suggest');
+  if(aiBtn){
+    aiBtn.onclick=async()=>{
+      const statusEl=document.getElementById('ai-status');
+      aiBtn.disabled=true; aiBtn.textContent='กำลังให้ AI อ่านและประเมิน...';
+      statusEl.textContent='';
+      const r=await adm('POST',null,{action:'suggest_grade',studentId:a.studentId,rubric:RUBRIC});
+      aiBtn.disabled=false; aiBtn.textContent='✨ ให้ AI ช่วยประเมิน (เสนอคะแนน+เหตุผล ยังต้องตรวจทานก่อนบันทึก)';
+      if(!r.ok||!r.data||!r.data.ok){
+        const err=r.data&&r.data.err;
+        const detail=err==='grader_not_configured'?'ยังไม่ได้ตั้งค่า ANTHROPIC_API_KEY บน Netlify (ดูวิธีตั้งค่าในไฟล์ วิธี_deploy.md)':((r.data&&r.data.detail)||err||'เชื่อมต่อไม่สำเร็จ');
+        statusEl.innerHTML='<span style="color:var(--danger)">AI ช่วยประเมินไม่สำเร็จ: '+esc(detail)+'</span>';
+        return;
+      }
+      statusEl.innerHTML='<span style="color:var(--ok)">AI เสนอคะแนนแล้ว — กรุณาตรวจทานทุกเกณฑ์ก่อนกดบันทึกคะแนน</span>';
+      (r.data.suggestions||[]).forEach(s=>{
+        const c=RUBRIC.find(x=>x.id===s.id); if(!c||!inputs[c.id]) return;
+        const p=Math.max(0,Math.min(c.max,Math.round(Number(s.points))));
+        inputs[c.id].value=p; sync(c);
+        const reasonEl=root.querySelector('[data-ai="'+c.id+'"]');
+        if(reasonEl&&s.reasoning){ reasonEl.textContent='AI: '+s.reasoning; reasonEl.classList.add('show'); }
+      });
+    };
+  }
+  document.getElementById('save-grade').onclick=async()=>{
+    const points={}; let missing=null;
+    RUBRIC.forEach(c=>{const v=inputs[c.id].value; if(v==='') missing=missing||c; else points[c.id]=Math.round(Number(v));});
+    const msg=document.getElementById('save-msg');
+    if(missing){ msg.innerHTML='<span style="color:var(--danger)">กรุณาให้คะแนนให้ครบทุกเกณฑ์ (ยังขาด: '+esc(missing.title)+')</span>'; return; }
+    const btn=document.getElementById('save-grade'); btn.disabled=true; btn.textContent='กำลังบันทึก...';
+    const r=await adm('POST',null,{action:'grade',studentId:a.studentId,points,comment:document.getElementById('cmt').value});
+    btn.disabled=false; btn.textContent='บันทึกคะแนน';
+    if(r.ok&&r.data&&r.data.ok){
+      msg.innerHTML='<span style="color:var(--ok)">บันทึกแล้ว · รวม '+r.data.total+' / '+TOTAL_SCORE+'</span>'; toast('บันทึกคะแนนแล้ว');
+      const it=items.find(x=>x.studentId===a.studentId); if(it){it.gradeTotal=r.data.total;it.gradePoints=points;it.gradeComment=document.getElementById('cmt').value;}
+    }else{
+      msg.innerHTML='<span style="color:var(--danger)">บันทึกไม่สำเร็จ ('+esc((r.data&&r.data.err)||'เชื่อมต่อไม่ได้')+')</span>';
+    }
+  };
+}
+function confirmDelete(a){
+  showModal(`<h3>ลบรายการของ ${esc(a.name)} ${esc(a.lastname)}?</h3>
+    <p>จะลบคำตอบ ประวัติ และคะแนนของรหัส ${esc(a.studentId)} ทั้งหมด และไม่สามารถกู้คืนได้ ใช้สำหรับล้างข้อมูลทดสอบ หรือเปิดสิทธิ์ให้นักศึกษาเริ่มใหม่</p>
+    <div class="modal-actions"><button class="btn btn-ghost" id="x-no">ยกเลิก</button><button class="btn btn-danger" id="x-yes">ลบรายการ</button></div>`,true);
+  document.getElementById('x-no').onclick=closeModals;
+  document.getElementById('x-yes').onclick=async()=>{
+    const r=await adm('POST',null,{action:'delete',studentId:a.studentId}); closeModals();
+    if(r.ok&&r.data&&r.data.ok){toast('ลบแล้ว');loadList();}else toast('ลบไม่สำเร็จ');
+  };
+}
+
+  function openAdmin(){
+    let s=null; try{s=sessionStorage.getItem(SS_KEY);}catch(e){}
+    if(s){ passcode=s; loadList(); } else renderGate();
+  }
+  return { open: openAdmin };
+})();
+
+/* ---------- init ---------- */
+(function init(){
+  const saved=lsGet(LS_ID);
+  if(saved&&saved.studentId&&saved.name&&saved.lastname) renderResumePrompt(saved);
+  else renderLanding();
+})();
+</script>
+</body>
+</html>
